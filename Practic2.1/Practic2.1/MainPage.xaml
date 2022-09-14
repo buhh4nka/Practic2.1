@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practic2._1.MainPage">
+
+    <StackLayout>
+
+        <Grid>
+            <Label Text="Введите сторону а = " FontSize="Large" Margin="0,10" Grid.Column="0" ></Label>
+            <Entry  x:Name="numberA" Text="{Binding number, Mode=TwoWay}" Grid.Column="1"></Entry>
+
+        </Grid>
+
+        <Grid>
+            <Label Text="Введите сторону b = " FontSize="Large" Margin="0,10" Grid.Column="0" ></Label>
+            <Entry  x:Name="numberB" Text="{Binding number, Mode=TwoWay}" Grid.Column="1"></Entry>
+
+        </Grid>
+
+        <Button x:Name="startProgramm" Text="Рассчитать" ></Button>
+
+    </StackLayout>
+
+</ContentPage>
